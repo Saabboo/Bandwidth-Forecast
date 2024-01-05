@@ -1,10 +1,12 @@
 import pandas as pd
 from datetime import datetime, timedelta
+xls_path = r"XX"
+df2_path = r"XX"
 
 def load_data():
-    xls = pd.ExcelFile(r"C:\Users\AliS\Desktop\test1\test4.xlsx")
+    xls = pd.ExcelFile(xls_path)
     df = pd.read_excel(xls, 'Sheet1')
-    df2 = pd.read_csv(r"C:\Users\AliS\Desktop\test1\Hour_map_test.csv")
+    df2 = pd.read_csv(df2_path)
 
     return df, df2
 
